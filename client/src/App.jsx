@@ -2,7 +2,7 @@ import { React, useEffect, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import {Contact,Footer,	Navbar,	Team, Opportunities, Hidden,
 	Podcast, GoToTop, Username, Register, Password, Profile, 
-	Recovery, Reset, PageNotFound, Grabby
+	Recovery, Reset, PageNotFound, Grabby, DarkMode
 } from './components';
 import { Loader, Popup } from './components/common';
 import { FourOhFour } from './pages/FourOhFour/FourOhFour';
@@ -31,6 +31,7 @@ const App = () => {
 			<GoToTop />
 			<Popup />
 			<Navbar />
+			<DarkMode/>
 			<Suspense fallback={<div className='loading'><Loader/></div>}>
 			<Routes>
 				<Route path="/" element={<Homepage />} />

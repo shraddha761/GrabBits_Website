@@ -1,6 +1,7 @@
 import {lazy} from 'react'
 import Navbar from './Navbar/Navbar'
 import GoToTop from './GoToTop';
+import DarkMode from './DarkModeToogle';
 
 /** import all components lazily*/
 const Contact=lazy(()=>import('./Contact/Contact'))
@@ -38,6 +39,7 @@ export{
     Highlights,
     Landing,
     Faq,
+    DarkMode,
     Navbar,
     GoToTop,
     Grabby
