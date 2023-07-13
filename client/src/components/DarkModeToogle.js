@@ -14,7 +14,7 @@ export default function ThemeSwitcher() {
   const themeStyles = `
     body {
       background-color: ${isDarkMode ? "#222222" : "#ffffff"};
-      color: ${isDarkMode ? "#ffffff" : "#000000"};
+      color: ${isDarkMode ? "#222222" : "#222222"};
     }
   `;
 
